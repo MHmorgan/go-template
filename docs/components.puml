@@ -1,0 +1,14 @@
+@startuml
+
+component SQLite as DB
+component Models
+component World
+component Game
+
+Models --> DB
+World --> DB
+World -> Models
+Game --> World
+Game -> Models
+
+@enduml
